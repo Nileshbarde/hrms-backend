@@ -23,6 +23,9 @@ app.use('/api/leads', leadRoutes);
 app.use('/api/source', sourceRoutes);
 app.use('/api/status', statusRoutes);
 
+app.get("/", (req, res) => {
+  res.json({ message: "Hello from Express on Vercel!" });
+});
 
 // app.use('/api/holidays', holidayRoutes);
 
